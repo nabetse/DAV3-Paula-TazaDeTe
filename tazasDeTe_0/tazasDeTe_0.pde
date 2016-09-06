@@ -11,10 +11,11 @@ void setup() {
 
 void draw() {
   background(255);
+  pushMatrix();
+  translate(width/2, height/2, 0);
   for (int i = 0; i < lucis.size(); i++) {  
-      luciernaga l = lucis.get(i);
-      l.pos.x = mouseX;
-      l.pos.y = mouseY;
-      l.draw();
-    }
+    luciernaga l = lucis.get(i);
+    l.draw();
+  }
+  popMatrix();
 }
