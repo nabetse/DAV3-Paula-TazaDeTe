@@ -6,7 +6,7 @@ class luciernaga {
     for ( int i = 0; i<imagenes.length; i++ ) {
       imagenes[i] = loadImage( "luci" + (i+1) + ".png" );
     } 
-    pos = new PVector(0, 0, 0);
+    pos = new PVector(random(-width/2, width/2), random(-height/2, height/2), random(-width/2, width/2));
   }
 
   void draw() {
